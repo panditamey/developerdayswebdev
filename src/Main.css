@@ -1,0 +1,154 @@
+.ResumeBody{
+    background: #0A1931;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.ResumeContainer{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #EFEFEF;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+  }
+  .ResumeContainer .left_Resume{
+    position: relative;
+    background: #185ADB;
+    padding: 40px;
+  }
+  .ResumeContainer .right_Resume{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+  }
+  .profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .profileText h2{
+    color: #EFEFEF;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+  .contactInfo{
+    padding-top: 40px;
+  }
+  .contactInfo.education li{
+    margin-bottom: 15px;
+  }
+  .contactInfo.education .h5{
+    color: #03a9f4;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contactInfo.education h4:nth-child(2){
+    color: #003147;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .contactInfo.education .h4{
+    color: #003147;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .contactInfo ul{
+    position: relative;
+  }
+  .contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #FF8303;
+  }
+  .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .title2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .skillsgrid{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px; 
+    padding-bottom: 40px;
+}
+.skillsgrid .skillicon{
+    font-size: 45px;
+    color: #FF8303;
+}
+.aboutResume:last-child{
+    margin-bottom: 10px;
+  }
+.orgName{
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #003147;
+
+}
+
+.LanguageInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #003147;
+    font-weight: 300;
+    font-size: 18px;
+
+  }
+
+.aboutResume p{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.resumeTitle{
+    color: #fff;
+    background: #0A1931;
+    justify-content: center;
+    text-align: center;
+    padding-top: 35px;
+}

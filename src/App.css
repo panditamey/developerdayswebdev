@@ -1,0 +1,328 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scene{
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  background: rgb(218, 240, 255);
+}
+.dark .scene{
+  background: #222833;
+}
+.sun{
+  position: absolute;
+  top: 100px;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+
+}
+h4{
+  font-weight: 100;
+  position: absolute;
+  top: 40px;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+.dark .sun
+{
+  left: 65%;
+  box-shadow: 0 0 0 #fff;
+
+}
+.dark .sun::before
+{
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background: #222833;
+  border-radius: 50%;
+}
+.bg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 280px;
+  background: url(images/bg.png);
+  animation: animateBg 25s linear infinite;
+  background-size: 1500px;
+  background-repeat: repeat-x;
+}
+@keyframes animateBg 
+{
+  0%
+  {
+    background-position-x: 0px;
+  } 
+  100%
+  {
+    background-position-x: 1500px;
+  } 
+}
+.car1{
+  position: absolute;
+  left: -200px;
+  bottom: 20px;
+  max-width: 200px;
+  z-index: 10;
+  animation: car1 18s linear infinite;
+}
+@keyframes car1 
+{
+  0%
+  {
+    transform: translate(0px);
+  }
+  90%,100%
+  {
+    transform: translate(calc(100vw + 200px));
+  }
+}
+
+.car2{
+  position: absolute;
+  right: -200px;
+  bottom: 50px;
+  max-width: 200px;
+  z-index: 9;
+  animation: car2 12s linear infinite;
+}
+@keyframes car2 
+{
+  0%
+  {
+    transform: translate(0px) rotateY(180deg);
+  }
+  90%,100%
+  {
+    transform: translate(calc(-100vw - 200px)) rotateY(180deg);
+  }
+}
+.autoName{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #222833;
+  font-size: 65px;
+  font-weight: 400;
+}
+.dark .wrapper .static-txt{
+  color: white;
+  font-size: 65px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+
+}
+ .static-txts{
+  color: #222833;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 1px 0;
+  line-height: 90px;
+  height: 200%;
+
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background: rgb(218, 240, 255);
+  border-left: 4px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+.dark .dynamic-txts li span::after{
+  background: #222833;
+}
+@keyframes typing {
+  60%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.dark h4{
+  visibility: hidden;
+}
+.aboutTitle{
+  font-size: 60px;
+  color: #F98404;
+}
+
+
+.about{
+  margin: 0;
+  height: 100%; 
+  width: 100%; 
+  text-align: center;
+  padding-bottom: 0;
+  font-weight: 500;
+  padding: 0px;
+
+}
+.about .aboutLight{
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #222833;
+  background: rgb(218, 240, 255);
+}
+.aboutData{
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 15px;
+  color: #222833;
+}
+
+.aboutDark .aboutData{
+  color: white;
+}
+.about .aboutDark{
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: white;
+  background: #222833;
+
+}
+
+.skill{
+  position: relative;
+  margin: 0;
+  height: 100%; 
+  width: 100%; 
+  text-align: center;
+  padding-bottom: 0;
+  font-weight: 500;
+  padding: 0px;
+  justify-content: center;
+  background: rgb(218, 240, 255);
+
+}
+
+.skillTitle{
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  font-size: 60px;
+  font-weight: 400;
+  background: rgb(218, 240, 255);
+
+}
+.skill .skillLight{
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: black;
+  background: rgb(218, 240, 255);
+}
+
+.skillData{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-bottom: 7%;
+  font-size: 60px;
+  justify-content:space-around;
+  background: rgb(218, 240, 255);
+
+}
+
+/* Resume Css */
+.resume{
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200vh;
+  display: grid;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  background: #fff;
+}
+.container .left_Side{
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+.container .right_Side{
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.Footer{
+  background: lightblue;
+  justify-content: center;
+  text-align: center;
+  color: #003147;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

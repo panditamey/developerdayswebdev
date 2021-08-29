@@ -1,6 +1,9 @@
 {
   "name": "3-portfolio-react",
+  
   "version": "0.1.0",
+  
+  "homepage": "http://panditamey.github.io/site",
   "private": true,
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
